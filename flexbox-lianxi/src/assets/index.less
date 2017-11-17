@@ -1,0 +1,68 @@
+.big-one{
+  border: 1px solid #0f0;
+  width: 150px;
+  height: 200px;
+  padding: 20px;
+}
+.big-two{
+  border: 1px solid #f00;
+  width: 150px;
+  height: 120px;
+  padding: 20px;
+}
+.big-three{
+  border: 1px solid #f00;
+  width: 150px;
+  height: 100px;
+  padding: 20px;
+}
+.big-four{
+  border: 1px solid #f00;
+  width: 150px;
+  height: 40px;
+  padding: 20px;
+}
+@media screen and (min-width: 640px){
+  #flex-box{
+    display: flex;
+    flex-direction: row;//水平排列
+    flex-wrap: nowrap;//不换行
+    justify-content: space-between;//左右紧贴边缘，中间等距
+    align-items: center;//中间对齐 
+  }
+  .big-one{
+    order: 4;
+  }
+  .big-two{
+    order: 1;
+  }
+  .big-three{
+    order: 2;
+  }
+  .big-four{
+    order: 3;
+  }
+
+}
+@media screen and (max-width: 640px){
+  #flex-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .big-one{
+    order: 1;
+  }
+  .big-two{
+    order: 2;
+  }
+  .big-three{
+    order: 3;
+  }
+  .big-four{
+    order: 4;
+  }
+ 
+}

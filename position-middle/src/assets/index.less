@@ -1,0 +1,60 @@
+//方法1
+// .box{
+//   width: 400px;
+//   height: 200px;
+//   background:#ccc;
+//   position: absolute;
+//   top: 50%;
+//   left:50%;
+//   margin-left: -200px;
+//   margin-top: -100px;
+// }
+// .left-top,.right-bottom{
+//   width:0;
+//   height:0;
+//   border-width:50px;
+//   border-style:solid;
+//   border-radius:50px;
+ 
+// }
+// .left-top{
+//   border-color:#fc0 transparent transparent transparent;
+//   transform:rotate(135deg);
+//   margin-top:-50px;
+//   margin-left: -50px;
+// }
+// .right-bottom{
+//   border-color: transparent transparent #fc0 transparent;
+//   transform:rotate(135deg);
+//   margin-left: 350px;
+//   margin-top:100px;
+// }
+
+
+//方法2
+.box{
+  width: 400px;
+  height: 200px;
+  background:#ccc;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  margin-left: -200px;
+  margin-top: -100px;
+  overflow: hidden;//把超过的部分隐藏。包含浮动元素。
+}
+.left-top,.right-bottom{
+  width: 100px;
+  height: 100px;
+  border-radius:50px;
+  background-color: #fc0;
+}
+.left-top{
+  margin-top:-50px;
+  margin-left: -50px;
+}
+.right-bottom{
+  position: absolute;
+  right:-50px;
+  bottom: -50px;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "task2",
+  "version": "1.0.0",
+  "description": "task2",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "dn test && dn build -e prod"
+  },
+  "author": {
+    "name": "Houfeng",
+    "email": "admin@xhou.net",
+    "url": "http://houfeng.net"
+  },
+  "license": "MIT",
+  "devDependencies": {}
+}
