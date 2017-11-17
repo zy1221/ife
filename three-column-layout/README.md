@@ -1,36 +1,13 @@
----
-group: template
-name: front
-title: 普通前端工程
----
+# 任务描述
 
-## dn-template-front
+* 使用 HTML 与 CSS 按照[示例图](./task.png)实现三栏式布局。
+* 左右两栏宽度固定，中间一栏根据父元素宽度填充满，最外面的框应理解为浏览器。背景色为 #eee 区域的高度取决于三个子元素中最高的高度。
 
-这是一个基础的前端工程模板，没有集成任何框架，但相关配置是完整的，默认已经支持：
+# 任务注意事项
 
-- 新语法，已针对 es6/7 几乎所有新语法做自动转译。
-- 单元测试，已启用 unit 中间件
-
-通过 `front` 模板初始化一下工程
-
-```sh
-$ dn init -t front
-```
-
-如果你的 dn 连接的是默认服务，也可以从模板列表中选择
-
-```sh
-$ dn init
-```
-
-可以在类似如下的菜单中选择 `front` 模板
-```sh
-? Found 3 templates (Use arrow keys)
-❯ 1. front      : Blank front end project template
-  2. node       : Blank node project template
-  3. middleware : Dawn middleware project template
-```
-
-工程初始化完成后，就可以使用 `dn` 相关命令进行开发构建了。
-
-你还可以在此工程的基础上集成相关框架、比如 react/vue 等，并发布为新的模板。
+* 尝试 position 和 float 的效果，思考它们的异同和应用场景。
+* 注意测试不同情况，尤其是极端情况下的效果。
+* 图片和文字内容请自行替换，尽可能体现团队的特色。
+* 调节浏览器宽度，固定宽度和自适应宽度的效果始终符合预期。
+* 改变中间一栏的内容长度，以确保在中间一栏较高和右边一栏较高时，父元素的高度始终为子元素中最高的高度。
+* 其他效果图中给出的标识均被正确地实现。
